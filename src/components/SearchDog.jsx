@@ -132,7 +132,7 @@ const SearchDog = () => {
                   setSearch({ ...search, [e.target.name]: e.target.value })
                 }
               >
-                <option>Seleccione Sub-Raza</option>
+                <option value="">Seleccione Sub-Raza</option>
                 {subBreeds.map((subBreed) => (
                   <option key={subBreed} value={subBreed}>
                     {subBreed.charAt(0).toUpperCase() + subBreed.slice(1)}
@@ -152,6 +152,15 @@ const SearchDog = () => {
           </div>
         </form>
       </div>
+      
+      <div className="titleDogs d-flex justify-content-center mb-5">
+
+      {search && <button className="btn btn-info" disabled><h1 className="text-white">{search.breed.charAt(0).toUpperCase() + search.breed.slice(1)} - {search.subBreed.charAt(0).toUpperCase() + search.subBreed.slice(1)}</h1></button>}
+      
+      {/* {search && <h1 className="text-info">{search.breed.charAt(0).toUpperCase() + search.breed.slice(1)} - {search.subBreed.charAt(0).toUpperCase() + search.subBreed.slice(1)}</h1>} */}
+
+      </div>
+      
     </>
   );
 };

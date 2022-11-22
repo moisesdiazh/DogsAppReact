@@ -2,7 +2,7 @@ header {
   color: white;
   text-align: center;
 }
-header h1 {
+header h1, .titleDogs h1 {
   font-family: 'Outfit', sans-serif;
   font-weight: 900;
 }
