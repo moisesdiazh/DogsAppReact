@@ -12,7 +12,7 @@ const BreedsProvider = ({ children }) => {
       const url = "https://dog.ceo/api/breeds/list/all";
 
       const { data } = await axios(url);
-      console.log(data.message);
+      // console.log(data.message.bulldog);
       setBreeds(data.message);
     } catch (e) {
       console.log(e);

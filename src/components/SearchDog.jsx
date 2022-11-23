@@ -9,72 +9,6 @@ const SearchDog = () => {
     subBreed: "",
   });
 
-  const subBreeds = [
-    "shepherd",
-    "boston",
-    "english",
-    "french",
-    "staffordshire",
-    "australian",
-    "border",
-    "cardigan",
-    "great",
-    "scottish",
-    "norwegian",
-    "lapphund",
-    "bichon",
-    "italian",
-    "afghan",
-    "basset",
-    "blood",
-    "ibizan",
-    "plott",
-    "walker",
-    "bull",
-    "tibetan",
-    "bernese",
-    "swiss",
-    "caucasian",
-    "miniature",
-    "german",
-    "germanlonghair",
-    "medium",
-    "standard",
-    "toy",
-    "chesapeake",
-    "curly",
-    "flatcoated",
-    "golden",
-    "rhodesian",
-    "giant",
-    "gordon",
-    "irish",
-    "shetland",
-    "blenheim",
-    "brittany",
-    "cocker",
-    "japanese",
-    "sussex",
-    "welsh",
-    "american",
-    "bedlington",
-    "cairn",
-    "dandie",
-    "fox",
-    "kerryblue",
-    "lakeland",
-    "norfolk",
-    "norwich",
-    "patterdale",
-    "russell",
-    "sealyham",
-    "silky",
-    "westhighland",
-    "wheaten",
-    "yorkshire",
-    "spanish",
-  ];
-
   const { getImagesBreeds, getImagesBreedsBySubBreed } = useImagesBreeds(); //desestructuramos para tener la funcion de obtenerimagenes
 
   const [alert, setAlert] = useState("");
@@ -144,25 +78,597 @@ const SearchDog = () => {
                 }
               >
                 <option value="">Seleccione Sub-Raza</option>
-                {/* {subBreeds.map((subBreed) => (
-                  <option key={subBreed} value={subBreed}>
-                    {subBreed.charAt(0).toUpperCase() + subBreed.slice(1)}
-                  </option>
-                ))} */}
-            
-              
-              {
-                idSubBreed == "French" &&
-                (
-                  Object.keys(breeds).map((breed, index) => (
-                  <option key={index} value={breed}>
-                    {
-                        breed
-                    }
-                  </option>
-                ))
-                )
-              }
+                
+                {
+                  idSubBreed == "australian" &&
+                    (
+                      Object.entries(breeds.australian).map((subBreed, index) => {
+                      
+                      return (
+                        <>
+                          <option key={index} value={subBreed[1]}>
+                          
+                            {subBreed[1].charAt(0).toUpperCase() + subBreed[1].slice(1)}
+      
+                          </option>
+                        </>
+                        
+                        )
+                      })
+                    )
+                }
+
+                {
+                  idSubBreed == "buhund" &&
+                    (
+                      Object.entries(breeds.buhund).map((subBreed, index) => {
+                      
+                      return (
+                        <>
+                          <option key={index} value={subBreed[1]}>
+                          
+                            {subBreed[1].charAt(0).toUpperCase() + subBreed[1].slice(1)}
+      
+                          </option>
+                        </>
+                        
+                        )
+                      })
+                    )
+                }
+
+                {
+                  idSubBreed == "bulldog" &&
+                    (
+                      Object.entries(breeds.bulldog).map((subBreed, index) => {
+                      
+                      return (
+                        <>
+                          <option key={index} value={subBreed[1]}>
+                          
+                            {subBreed[1].charAt(0).toUpperCase() + subBreed[1].slice(1)}
+      
+                          </option>
+                        </>
+                        
+                        )
+                      })
+                    )
+                }
+
+                {
+                  idSubBreed == "bullterrier" &&
+                    (
+                      Object.entries(breeds.bullterrier).map((subBreed, index) => {
+                      
+                      return (
+                        <>
+                          <option key={index} value={subBreed[1]}>
+                          
+                            {subBreed[1].charAt(0).toUpperCase() + subBreed[1].slice(1)}
+      
+                          </option>
+                        </>
+                        
+                        )
+                      })
+                    )
+                }
+
+                {
+                  idSubBreed == "cattledog" &&
+                    (
+                      Object.entries(breeds.cattledog).map((subBreed, index) => {
+                      
+                      return (
+                        <>
+                          <option key={index} value={subBreed[1]}>
+                          
+                            {subBreed[1].charAt(0).toUpperCase() + subBreed[1].slice(1)}
+      
+                          </option>
+                        </>
+                        
+                        )
+                      })
+                    )
+                }
+
+                {
+                  idSubBreed == "collie" &&
+                    (
+                      Object.entries(breeds.collie).map((subBreed, index) => {
+                      
+                      return (
+                        <>
+                          <option key={index} value={subBreed[1]}>
+                          
+                            {subBreed[1].charAt(0).toUpperCase() + subBreed[1].slice(1)}
+      
+                          </option>
+                        </>
+                        
+                        )
+                      })
+                    )
+                }
+
+                {
+                  idSubBreed == "corgi" &&
+                    (
+                      Object.entries(breeds.corgi).map((subBreed, index) => {
+                      
+                      return (
+                        <>
+                          <option key={index} value={subBreed[1]}>
+                          
+                            {subBreed[1].charAt(0).toUpperCase() + subBreed[1].slice(1)}
+      
+                          </option>
+                        </>
+                        
+                        )
+                      })
+                    )
+                }
+
+                {
+                  idSubBreed == "dane" &&
+                    (
+                      Object.entries(breeds.dane).map((subBreed, index) => {
+                      
+                      return (
+                        <>
+                          <option key={index} value={subBreed[1]}>
+                          
+                            {subBreed[1].charAt(0).toUpperCase() + subBreed[1].slice(1)}
+      
+                          </option>
+                        </>
+                        
+                        )
+                      })
+                    )
+                }
+
+                {
+                  idSubBreed == "deerhound" &&
+                    (
+                      Object.entries(breeds.deerhound).map((subBreed, index) => {
+                      
+                      return (
+                        <>
+                          <option key={index} value={subBreed[1]}>
+                          
+                            {subBreed[1].charAt(0).toUpperCase() + subBreed[1].slice(1)}
+      
+                          </option>
+                        </>
+                        
+                        )
+                      })
+                    )
+                }
+
+                {
+                  idSubBreed == "elkhound" &&
+                    (
+                      Object.entries(breeds.elkhound).map((subBreed, index) => {
+                      
+                      return (
+                        <>
+                          <option key={index} value={subBreed[1]}>
+                          
+                            {subBreed[1].charAt(0).toUpperCase() + subBreed[1].slice(1)}
+      
+                          </option>
+                        </>
+                        
+                        )
+                      })
+                    )
+                }
+
+                {
+                  idSubBreed == "finnish" &&
+                    (
+                      Object.entries(breeds.finnish).map((subBreed, index) => {
+                      
+                      return (
+                        <>
+                          <option key={index} value={subBreed[1]}>
+                          
+                            {subBreed[1].charAt(0).toUpperCase() + subBreed[1].slice(1)}
+      
+                          </option>
+                        </>
+                        
+                        )
+                      })
+                    )
+                }
+
+                {
+                  idSubBreed == "frise" &&
+                    (
+                      Object.entries(breeds.frise).map((subBreed, index) => {
+                      
+                      return (
+                        <>
+                          <option key={index} value={subBreed[1]}>
+                          
+                            {subBreed[1].charAt(0).toUpperCase() + subBreed[1].slice(1)}
+      
+                          </option>
+                        </>
+                        
+                        )
+                      })
+                    )
+                }
+
+                {
+                  idSubBreed == "greyhound" &&
+                    (
+                      Object.entries(breeds.greyhound).map((subBreed, index) => {
+                      
+                      return (
+                        <>
+                          <option key={index} value={subBreed[1]}>
+                          
+                            {subBreed[1].charAt(0).toUpperCase() + subBreed[1].slice(1)}
+      
+                          </option>
+                        </>
+                        
+                        )
+                      })
+                    )
+                }
+
+                {
+                  idSubBreed == "hound" &&
+                    (
+                      Object.entries(breeds.hound).map((subBreed, index) => {
+                      
+                      return (
+                        <>
+                          <option key={index} value={subBreed[1]}>
+                          
+                            {subBreed[1].charAt(0).toUpperCase() + subBreed[1].slice(1)}
+      
+                          </option>
+                        </>
+                        
+                        )
+                      })
+                    )
+                }
+
+                {
+                  idSubBreed == "mastiff" &&
+                    (
+                      Object.entries(breeds.mastiff).map((subBreed, index) => {
+                      
+                      return (
+                        <>
+                          <option key={index} value={subBreed[1]}>
+                          
+                            {subBreed[1].charAt(0).toUpperCase() + subBreed[1].slice(1)}
+      
+                          </option>
+                        </>
+                        
+                        )
+                      })
+                    )
+                }
+
+                {
+                  idSubBreed == "mountain" &&
+                    (
+                      Object.entries(breeds.mountain).map((subBreed, index) => {
+                      
+                      return (
+                        <>
+                          <option key={index} value={subBreed[1]}>
+                          
+                            {subBreed[1].charAt(0).toUpperCase() + subBreed[1].slice(1)}
+      
+                          </option>
+                        </>
+                        
+                        )
+                      })
+                    )
+                }
+
+                {
+                  idSubBreed == "ovcharka" &&
+                    (
+                      Object.entries(breeds.ovcharka).map((subBreed, index) => {
+                      
+                      return (
+                        <>
+                          <option key={index} value={subBreed[1]}>
+                          
+                            {subBreed[1].charAt(0).toUpperCase() + subBreed[1].slice(1)}
+      
+                          </option>
+                        </>
+                        
+                        )
+                      })
+                    )
+                }
+
+                {
+                  idSubBreed == "pinscher" &&
+                    (
+                      Object.entries(breeds.pinscher).map((subBreed, index) => {
+                      
+                      return (
+                        <>
+                          <option key={index} value={subBreed[1]}>
+                          
+                            {subBreed[1].charAt(0).toUpperCase() + subBreed[1].slice(1)}
+      
+                          </option>
+                        </>
+                        
+                        )
+                      })
+                    )
+                }
+
+                {
+                  idSubBreed == "pointer" &&
+                    (
+                      Object.entries(breeds.pointer).map((subBreed, index) => {
+                      
+                      return (
+                        <>
+                          <option key={index} value={subBreed[1]}>
+                          
+                            {subBreed[1].charAt(0).toUpperCase() + subBreed[1].slice(1)}
+      
+                          </option>
+                        </>
+                        
+                        )
+                      })
+                    )
+                }
+
+                {
+                  idSubBreed == "poodle" &&
+                    (
+                      Object.entries(breeds.poodle).map((subBreed, index) => {
+                      
+                      return (
+                        <>
+                          <option key={index} value={subBreed[1]}>
+                          
+                            {subBreed[1].charAt(0).toUpperCase() + subBreed[1].slice(1)}
+      
+                          </option>
+                        </>
+                        
+                        )
+                      })
+                    )
+                }
+
+                {
+                  idSubBreed == "retriever" &&
+                    (
+                      Object.entries(breeds.retriever).map((subBreed, index) => {
+                      
+                      return (
+                        <>
+                          <option key={index} value={subBreed[1]}>
+                          
+                            {subBreed[1].charAt(0).toUpperCase() + subBreed[1].slice(1)}
+      
+                          </option>
+                        </>
+                        
+                        )
+                      })
+                    )
+                }
+
+                {
+                  idSubBreed == "ridgeback" &&
+                    (
+                      Object.entries(breeds.ridgeback).map((subBreed, index) => {
+                      
+                      return (
+                        <>
+                          <option key={index} value={subBreed[1]}>
+                          
+                            {subBreed[1].charAt(0).toUpperCase() + subBreed[1].slice(1)}
+      
+                          </option>
+                        </>
+                        
+                        )
+                      })
+                    )
+                }
+
+                {
+                  idSubBreed == "schnauzer" &&
+                    (
+                      Object.entries(breeds.schnauzer).map((subBreed, index) => {
+                      
+                      return (
+                        <>
+                          <option key={index} value={subBreed[1]}>
+                          
+                            {subBreed[1].charAt(0).toUpperCase() + subBreed[1].slice(1)}
+      
+                          </option>
+                        </>
+                        
+                        )
+                      })
+                    )
+                }
+
+                {
+                  idSubBreed == "segugio" &&
+                    (
+                      Object.entries(breeds.segugio).map((subBreed, index) => {
+                      
+                      return (
+                        <>
+                          <option key={index} value={subBreed[1]}>
+                          
+                            {subBreed[1].charAt(0).toUpperCase() + subBreed[1].slice(1)}
+      
+                          </option>
+                        </>
+                        
+                        )
+                      })
+                    )
+                }
+
+                {
+                  idSubBreed == "setter" &&
+                    (
+                      Object.entries(breeds.setter).map((subBreed, index) => {
+                      
+                      return (
+                        <>
+                          <option key={index} value={subBreed[1]}>
+                          
+                            {subBreed[1].charAt(0).toUpperCase() + subBreed[1].slice(1)}
+      
+                          </option>
+                        </>
+                        
+                        )
+                      })
+                    )
+                }
+
+                {
+                  idSubBreed == "sheepdog" &&
+                    (
+                      Object.entries(breeds.sheepdog).map((subBreed, index) => {
+                      
+                      return (
+                        <>
+                          <option key={index} value={subBreed[1]}>
+                          
+                            {subBreed[1].charAt(0).toUpperCase() + subBreed[1].slice(1)}
+      
+                          </option>
+                        </>
+                        
+                        )
+                      })
+                    )
+                }
+
+                {
+                  idSubBreed == "spaniel" &&
+                    (
+                      Object.entries(breeds.spaniel).map((subBreed, index) => {
+                      
+                      return (
+                        <>
+                          <option key={index} value={subBreed[1]}>
+                          
+                            {subBreed[1].charAt(0).toUpperCase() + subBreed[1].slice(1)}
+      
+                          </option>
+                        </>
+                        
+                        )
+                      })
+                    )
+                }
+
+                {
+                  idSubBreed == "springer" &&
+                    (
+                      Object.entries(breeds.springer).map((subBreed, index) => {
+                      
+                      return (
+                        <>
+                          <option key={index} value={subBreed[1]}>
+                          
+                            {subBreed[1].charAt(0).toUpperCase() + subBreed[1].slice(1)}
+      
+                          </option>
+                        </>
+                        
+                        )
+                      })
+                    )
+                }
+
+                {
+                  idSubBreed == "terrier" &&
+                    (
+                      Object.entries(breeds.terrier).map((subBreed, index) => {
+                      
+                      return (
+                        <>
+                          <option key={index} value={subBreed[1]}>
+                          
+                            {subBreed[1].charAt(0).toUpperCase() + subBreed[1].slice(1)}
+      
+                          </option>
+                        </>
+                        
+                        )
+                      })
+                    )
+                }
+
+                {
+                  idSubBreed == "waterdog" &&
+                    (
+                      Object.entries(breeds.waterdog).map((subBreed, index) => {
+                      
+                      return (
+                        <>
+                          <option key={index} value={subBreed[1]}>
+                          
+                            {subBreed[1].charAt(0).toUpperCase() + subBreed[1].slice(1)}
+      
+                          </option>
+                        </>
+                        
+                        )
+                      })
+                    )
+                }
+
+                {
+                  idSubBreed == "wolfhound" &&
+                    (
+                      Object.entries(breeds.wolfhound).map((subBreed, index) => {
+                      
+                      return (
+                        <>
+                          <option key={index} value={subBreed[1]}>
+                          
+                            {subBreed[1].charAt(0).toUpperCase() + subBreed[1].slice(1)}
+      
+                          </option>
+                        </>
+                        
+                        )
+                      })
+                    )
+                }
+
+                
                 
               </select>
             </div>
@@ -182,23 +688,20 @@ const SearchDog = () => {
       <div className="column titleDogs d-flex justify-content-center mb-5">
         <div className="d-flex flex-column">
           <div>
-            {search && (
-              <h1 className="text-info">
+            {search.breed != "" && (
+              <h1 className="dogtitle text-info mx-3">
                 {search.breed.charAt(0).toUpperCase() + search.breed.slice(1)}{" "}
-                {search.subBreed.charAt(0).toUpperCase() +
-                  search.subBreed.slice(1)}
               </h1>
             )}
           </div>
 
           <div className="d-flex justify-content-center">
             {search.breed != "" && (
-              <form action="https://stirring-sfogliatella-d9ff2d.netlify.app/">
+              
 
-                <button className="btn btn-info text-white">
+                <a href="https://stirring-sfogliatella-d9ff2d.netlify.app/" className="btn btn-info text-white">
                   Limpiar Filtros
-                </button>
-              </form>
+                </a>
               
             )}
           </div>

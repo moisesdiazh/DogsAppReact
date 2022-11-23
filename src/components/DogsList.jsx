@@ -5,13 +5,13 @@ const DogsList = () => {
 
   return (
     <div className="row mx-5">
-      {imagesBreeds.map((image) => (
+      {imagesBreeds.map((image, index) => (
         <div className="col-md-4 col-lg-4">
           <div className="work-box">
             <a href={image}>
               <div className="work-img">
                 <img
-                  key={image}
+                  key={index}
                   src={image}
                   className="img-fluid p-4"
                   height={370}

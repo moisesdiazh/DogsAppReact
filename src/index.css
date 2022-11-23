@@ -30,8 +30,7 @@ header h1, .titleDogs h1 {
   transition: all 1s;
 }
 
-@media (min-width: 540) and (max-width: 767px){
+@media (min-width: 280) and (max-width: 540px){
 
-
-
+  
 }
