@@ -79,6 +79,8 @@ const SearchDog = () => {
 
   const [alert, setAlert] = useState("");
 
+  const [idSubBreed, setIdSubBreed] = useState(); //yt
+
   const handleSubmit = (e) => {
     e.preventDefault();
 
@@ -91,9 +93,13 @@ const SearchDog = () => {
     getImagesBreedsBySubBreed(search);
   };
 
-  const handleClearFilter = (e) => {
-    e.preventDefault();
-  };
+
+  //yt
+  const handleLoadSubBreed = (e) => {
+    const option = e.target.value;
+    console.log(option);
+    setIdSubBreed(option);
+  } 
 
   return (
     <>
@@ -113,10 +119,11 @@ const SearchDog = () => {
                 onChange={(e) =>
                   setSearch({ ...search, [e.target.name]: e.target.value })
                 }
+                onClick={handleLoadSubBreed}
               >
-                <option value="">Seleccione una Raza</option>
-                {Object.keys(breeds).map((breed) => (
-                  <option key={breed} value={breed}>
+                <option value="0">Seleccione una Raza</option>
+                {Object.keys(breeds).map((breed, index) => (
+                  <option key={index} value={breed}>
                     {breed.charAt(0).toUpperCase() + breed.slice(1)}
                   </option>
                 ))}
@@ -137,11 +144,26 @@ const SearchDog = () => {
                 }
               >
                 <option value="">Seleccione Sub-Raza</option>
-                {subBreeds.map((subBreed) => (
+                {/* {subBreeds.map((subBreed) => (
                   <option key={subBreed} value={subBreed}>
                     {subBreed.charAt(0).toUpperCase() + subBreed.slice(1)}
                   </option>
-                ))}
+                ))} */}
+            
+              
+              {
+                idSubBreed == "French" &&
+                (
+                  Object.keys(breeds).map((breed, index) => (
+                  <option key={index} value={breed}>
+                    {
+                        breed
+                    }
+                  </option>
+                ))
+                )
+              }
+                
               </select>
             </div>
 
