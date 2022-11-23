@@ -55,7 +55,7 @@ const SearchDog = () => {
                 }
                 onClick={handleLoadSubBreed}
               >
-                <option value="0">Seleccione una Raza</option>
+                <option value="">Seleccione una Raza</option>
                 {Object.keys(breeds).map((breed, index) => (
                   <option key={index} value={breed}>
                     {breed.charAt(0).toUpperCase() + breed.slice(1)}
@@ -77,7 +77,11 @@ const SearchDog = () => {
                   setSearch({ ...search, [e.target.name]: e.target.value })
                 }
               >
+                {/* condicionales para los select */}
+                
+                    
                 <option value="">Seleccione Sub-Raza</option>
+                    
                 
                 {
                   idSubBreed == "australian" &&
