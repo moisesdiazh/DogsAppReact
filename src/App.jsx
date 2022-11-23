@@ -11,7 +11,7 @@ function App() {
 
           <a className="text-decoration-none" href="https://stirring-sfogliatella-d9ff2d.netlify.app/">
             <img
-              src="/src/assets/img/logo-perro2.png"
+              src="../public/img/logo-perro2.png"
               height="100"
               width="140"
               alt=""
