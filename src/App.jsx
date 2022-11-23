@@ -9,7 +9,7 @@ function App() {
       <ImagesBreedsProvider>
         <header className="py-2 d-flex p-3 bg-info">
 
-          <a className="text-decoration-none" href="http://127.0.0.1:5173/">
+          <a className="text-decoration-none" href="https://stirring-sfogliatella-d9ff2d.netlify.app/">
             <img
               src="/src/assets/img/logo-perro2.png"
               height="100"
@@ -18,7 +18,7 @@ function App() {
             />
           </a>
 
-          <h1 className="m-4"><a className="text-white text-decoration-none" href="http://127.0.0.1:5173/">Dogs Photo App</a></h1>
+          <h1 className="m-4"><a className="text-white text-decoration-none" href="https://stirring-sfogliatella-d9ff2d.netlify.app/">Dogs Photo App</a></h1>
         </header>
 
         <div className="container px-4">

@@ -91,6 +91,10 @@ const SearchDog = () => {
     getImagesBreedsBySubBreed(search);
   };
 
+  const handleClearFilter = (e) => {
+    e.preventDefault();
+  };
+
   return (
     <>
       <div className="row py-4">
@@ -167,12 +171,13 @@ const SearchDog = () => {
 
           <div className="d-flex justify-content-center">
             {search.breed != "" && (
-              <a
-                className="btn btn-info text-white"
-                href="http://127.0.0.1:5173/"
-              >
-                Limpiar Filtros
-              </a>
+              <form action="https://stirring-sfogliatella-d9ff2d.netlify.app/">
+
+                <button className="btn btn-info text-white">
+                  Limpiar Filtros
+                </button>
+              </form>
+              
             )}
           </div>
         </div>
