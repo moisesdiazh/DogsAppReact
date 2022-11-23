@@ -31,7 +31,7 @@ const SearchDog = () => {
   //yt
   const handleLoadSubBreed = (e) => {
     const option = e.target.value;
-    console.log(option);
+    // console.log(option);
     setIdSubBreed(option);
   } 
 
