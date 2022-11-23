@@ -2,6 +2,7 @@ import SearchDog from "./components/SearchDog";
 import DogsList from "./components/DogsList";
 import { BreedsProvider } from "./context/BreedsProvider";
 import { ImagesBreedsProvider } from "./context/ImagesBreedsProvider";
+import logo from '../public/img/logo-perro2.png';
 
 function App() {
   return (
@@ -11,7 +12,7 @@ function App() {
 
           <a className="text-decoration-none" href="https://stirring-sfogliatella-d9ff2d.netlify.app/">
             <img
-              src="public/img/logo-perro2.png"
+              src={logo}
               height="100"
               width="140"
               alt=""
