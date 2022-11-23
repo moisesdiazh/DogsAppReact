@@ -4,7 +4,7 @@ const DogsList = () => {
   const { imagesBreeds } = useImagesBreeds();
 
   return (
-    <div className="row">
+    <div className="row mx-5">
       {imagesBreeds.map((image) => (
         <div className="col-md-4 col-lg-4">
           <div className="work-box">

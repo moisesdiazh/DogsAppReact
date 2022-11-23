@@ -8,14 +8,17 @@ function App() {
     <BreedsProvider>
       <ImagesBreedsProvider>
         <header className="py-2 d-flex p-3 bg-info">
-          <img
-            src="/src/assets/img/logo-perro2.png"
-            height="100"
-            width="140"
-            alt=""
-          />
 
-          <h1 className="m-4">Dogs Photo App</h1>
+          <a className="text-decoration-none" href="http://127.0.0.1:5173/">
+            <img
+              src="/src/assets/img/logo-perro2.png"
+              height="100"
+              width="140"
+              alt=""
+            />
+          </a>
+
+          <h1 className="m-4"><a className="text-white text-decoration-none" href="http://127.0.0.1:5173/">Dogs Photo App</a></h1>
         </header>
 
         <div className="container px-4">

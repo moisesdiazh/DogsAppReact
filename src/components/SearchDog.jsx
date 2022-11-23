@@ -152,15 +152,31 @@ const SearchDog = () => {
           </div>
         </form>
       </div>
-      
-      <div className="titleDogs d-flex justify-content-center mb-5">
 
-      {search && <button className="btn btn-info" disabled><h1 className="text-white">{search.breed.charAt(0).toUpperCase() + search.breed.slice(1)} - {search.subBreed.charAt(0).toUpperCase() + search.subBreed.slice(1)}</h1></button>}
-      
-      {/* {search && <h1 className="text-info">{search.breed.charAt(0).toUpperCase() + search.breed.slice(1)} - {search.subBreed.charAt(0).toUpperCase() + search.subBreed.slice(1)}</h1>} */}
+      <div className="column titleDogs d-flex justify-content-center mb-5">
+        <div className="d-flex flex-column">
+          <div>
+            {search && (
+              <h1 className="text-info">
+                {search.breed.charAt(0).toUpperCase() + search.breed.slice(1)}{" "}
+                {search.subBreed.charAt(0).toUpperCase() +
+                  search.subBreed.slice(1)}
+              </h1>
+            )}
+          </div>
 
+          <div className="d-flex justify-content-center">
+            {search.breed != "" && (
+              <a
+                className="btn btn-info text-white"
+                href="http://127.0.0.1:5173/"
+              >
+                Limpiar Filtros
+              </a>
+            )}
+          </div>
+        </div>
       </div>
-      
     </>
   );
 };
